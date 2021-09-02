@@ -10,6 +10,7 @@
   --banner-bg: linear-gradient(100.71deg, #25346A 28.71%, #141558 87.17%);
   --text: #6F6F6F;
   --text-primary: #009133;
+  --text-secondary: #A5CA3C;
   --text-nav: rgba(52, 58, 64, 0.9);
   --text-2: #6f6f6f;
   --text-3: #2E2E2E;
@@ -2029,6 +2030,18 @@ button.close:hover {
   color: #A5CA3C;
   border-bottom: 2px solid #A5CA3C;
   background: transparent;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: var(--text-secondary);
+  background-color: #fff;
+  border: 2px solid transparent;
+  font-weight: bold;
+  border-bottom-color: var(--text-secondary);
+}
+.nav-tabs .nav-link{
+  color: #6B6B6B;
+  font-size: 18px;
 }
 
 .agent-section{
