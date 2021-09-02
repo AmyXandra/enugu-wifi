@@ -1425,8 +1425,8 @@ a.text-secondary:focus, a.text-secondary:hover{
   background: var(--footer-bg2);
 }
 .footer-list-title {
-  font-size: 1.2rem;
-  
+  font-size: 18px;
+  color: #fff;
 }
 
 .footer-list-menu li a {
@@ -1455,11 +1455,11 @@ a.text-secondary:focus, a.text-secondary:hover{
 .footer-icons li a{
   font-size: 24px;
   padding: 7px 20px;
-  color: var(--text-primary);
+  color: #ffffff;
   padding-left: 0;
 }
 .footer-icons li a:hover{
-  color: var(--text-primary) !important;
+  color: var(--text-secondary) !important;
 }
 .download-btn{
   max-width:120px;
@@ -1506,11 +1506,12 @@ a.text-secondary:focus, a.text-secondary:hover{
 .footer-item p{
   line-height: 1.8;
   font-size: 14px;
+  color: #fff;
 }
 .footer-item p span{
-  color: var(--text-3);
   font-weight: 500;
-  display: block;
+  display: inline-block;
+  margin-right: 4px;
 }
 .toggle-title{
   display: flex;
