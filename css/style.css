@@ -1079,37 +1079,16 @@ a.text-secondary:focus, a.text-secondary:hover{
   height: 100%;
   z-index: -1;
 }
-/* .cta.bg-primary:before {
-  display: block;
-  content: "";
-  background-image: url(../images/header-background.svg);
-  background-repeat: round;
-  background-size:30px;
-  position: absolute;
-  top: 0;
-  background-position: left bottom;
-  opacity: 0.05;
-  width: 100%;
-  bottom: 0;
-} */
-/* #home.hero-section:before{
-  display: block;
-  content: "";
-  background-image: url(../images/wicrypt-pulse.svg);
-  background-repeat: space;
-  background-size: 75px;
-  position: absolute;
-  top: 0;
-  background-position: left bottom;
-  opacity: 0.05;
-  width: 100%;
-  bottom: 0;
-} */
+
 .hero-section-3 {
   padding: 150px 0px 50px 0px;
   background: url(../images/banner/pages-banner.png);
   background-position: center;
   background-size: cover;
+}
+.hero-section-3 .hero-title{
+  font-size: 40px;
+  line-height: 60px;
 }
 
 .home-img::before {
@@ -2057,4 +2036,23 @@ button.close:hover {
   background: url(../images/hero.svg), var(--bg-secondary);
   background-size: cover;
   background-position: center;
+}
+
+.zone-section {
+  background: url(../images/banner/zone-bg.png);
+  background-position: center;
+  background-size: cover;
+}
+.zone-card{
+  background: #FFFFFF;
+  border-radius: 8px;
+}
+.zone-list{
+  /* Primary/White */
+  background: #FFFFFF;
+  /* Drop shadow */
+  box-shadow: 0px 24.041px 36.0615px rgba(193, 199, 208, 0.16);
+  border-radius: 12px;
+  margin-bottom: 15px;
+  padding: 15px;
 }
