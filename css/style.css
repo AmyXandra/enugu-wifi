@@ -93,12 +93,12 @@ h2 {
 h3{
   line-height: 1.45;
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 1.75rem;
 }
 h4 {
   line-height: 1.4;
   font-weight: 700;
-  font-size: 1.6rem;
+  font-size: 1.45rem;
   color: var(--title);
 }
 h5 {
@@ -1328,15 +1328,14 @@ a.text-secondary:focus, a.text-secondary:hover{
   box-shadow: 0px 1.11687px 33.506px rgb(14 36 58 / 10%);
   border-radius: 8.93492px;
   height: 120px;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-bottom: 1.4rem;
+  display: table-cell;
+  vertical-align: middle;
 }
 .client-images img {
-  max-width: 124px;
+  max-width: 268px;
+  width: 100%;
   margin-left: 1rem;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  opacity: 0.7;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -2034,7 +2033,7 @@ button.close:hover {
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
   color: var(--text-secondary);
-  background-color: #fff;
+  background: transparent;
   border: 2px solid transparent;
   font-weight: bold;
   border-bottom-color: var(--text-secondary);
@@ -2051,21 +2050,45 @@ button.close:hover {
   background-position: center;
 }
 
-.zone-section {
+.zone-section{
   background: url(../images/banner/zone-bg.png);
   background-position: center;
   background-size: cover;
+  position: relative;
+}
+.zone-section:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: #000;
+  opacity: 0.3;
 }
 .zone-card{
   background: #FFFFFF;
   border-radius: 8px;
 }
 .zone-list{
-  /* Primary/White */
   background: #FFFFFF;
-  /* Drop shadow */
   box-shadow: 0px 24.041px 36.0615px rgba(193, 199, 208, 0.16);
   border-radius: 12px;
   margin-bottom: 15px;
   padding: 15px;
+}
+
+.gradient-bg{
+  position: relative;
+}
+.gradient-bg::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background: linear-gradient(26.62deg, rgba(252, 234, 201, 0.8) 20.64%, rgba(165, 202, 60, 0) 27.88%), linear-gradient(56.79deg, rgba(252, 234, 201, 0.66) 33.79%, rgba(165, 202, 60, 0) 45.05%), linear-gradient(301.08deg, rgba(252, 234, 201, 0.5551) 20.42%, rgba(165, 202, 60, 0) 42.4%), linear-gradient(141.57deg, rgba(203, 203, 203, 0.0425) 19.08%, rgba(165, 202, 60, 0) 36.34%), linear-gradient(262.14deg, #FCEAC9 14.58%, #FFFFFF 67.63%);
+  background-blend-mode: normal, darken, normal, normal, normal;
+  filter: blur(238px);
+  border-radius: 24px;
+  z-index: -1;
 }
