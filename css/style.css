@@ -106,6 +106,7 @@ h5 {
   font-size: 1.25rem;
 }
 
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -970,7 +971,7 @@ a.text-secondary:focus, a.text-secondary:hover{
   /* background: url(../images/banner/hero.png),var(--banner-bg); */
   background: url(../images/banner/hero.png), url(../images/banner/wifi-icons.svg),url(../images/banner/hero-lines.svg);
   background-size: cover, contain;
-  /* background-position: center; */
+  background-position: center;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -1578,8 +1579,15 @@ a.text-secondary:focus, a.text-secondary:hover{
 }
 
 @media (max-width: 767.98px) {
+  .client-images {
+    display: block;
+  }
+  #hero-image{
+    display: none;
+  }
   .hero-title {
     font-size: 32px;
+    line-height: inherit;
   }
   .toggle-title{
     display: flex;
