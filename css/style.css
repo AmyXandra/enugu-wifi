@@ -1536,12 +1536,15 @@ a.text-secondary:focus, a.text-secondary:hover{
   
 }
 @media (max-width: 991px) {
-  .navbar-custom {
+  /* .navbar-custom > .navbar-collapse.show {
     margin-top: 0px;
     padding: 10px 0px !important;
     background: white;
     -webkit-box-shadow: 0 10px 33px -14px rgba(0, 0, 0, 0.1);
     box-shadow: 0 10px 33px -14px rgba(0, 0, 0, 0.1);
+  } */
+  .navbar-collapse.show {
+    background: white;
   }
   .navbar-custom.navbar-expand-lg > .container {
     width: 90%;
@@ -1642,6 +1645,28 @@ a.text-secondary:focus, a.text-secondary:hover{
     z-index: -1;
     background: url(../images/satellite-view.png) 0 0 no-repeat;
     transform: skew(0deg);
+  }
+  .nav-tabs, .nav-pills{
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+  .nav-tabs::-webkit-scrollbar, .nav-pills::-webkit-scrollbar{
+    height: 2px;
+  }
+  .nav-tabs::-webkit-scrollbar-track, .nav-pills::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  .nav-tabs::-webkit-scrollbar-thumb, .nav-pills::-webkit-scrollbar-track {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
+  #product-image{
+    display: none;
   }
 }
 
@@ -2003,14 +2028,21 @@ button.close:hover {
   position: relative;
 }
 .routers-section:before {
-  content: "";
+  content: '';
   position: absolute;
-  background: var(--gradient-1);
-  background-blend-mode: normal, darken, normal, normal, normal;
-  filter: blur(238px);
+  height: 20%;
   width: 100%;
-  height: 100%;
-  background-position: center;
+  bottom: 0px;
+  background: linear-gradient(
+  26.62deg, rgba(252, 234, 201, 0.8) 20.64%, rgba(165, 202, 60, 0) 27.88%), linear-gradient(
+  56.79deg, rgba(252, 234, 201, 0.66) 33.79%, rgba(165, 202, 60, 0) 45.05%), linear-gradient(
+  301.08deg, rgba(252, 234, 201, 0.5551) 20.42%, rgba(165, 202, 60, 0) 42.4%), linear-gradient(
+  141.57deg, rgba(203, 203, 203, 0.0425) 19.08%, rgba(165, 202, 60, 0) 36.34%), linear-gradient(
+  262.14deg, #FCEAC9 14.58%, #FFFFFF 67.63%);
+  background-blend-mode: normal, darken, normal, normal, normal;
+  filter: blur(180px);
+  border-radius: 24px;
+  z-index: -1;
 }
 
 .outline-header{
@@ -2048,7 +2080,7 @@ button.close:hover {
 .nav-pills .nav-link {
   font-style: normal;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 19px;
   line-height: 32px;
   color: #595959;
   border-radius: 0;
@@ -2111,12 +2143,17 @@ button.close:hover {
 .gradient-bg::before{
   content: '';
   position: absolute;
-  height: 100%;
+  height: 20%;
   width: 100%;
-  top: 0;
-  background: linear-gradient(26.62deg, rgba(252, 234, 201, 0.8) 20.64%, rgba(165, 202, 60, 0) 27.88%), linear-gradient(56.79deg, rgba(252, 234, 201, 0.66) 33.79%, rgba(165, 202, 60, 0) 45.05%), linear-gradient(301.08deg, rgba(252, 234, 201, 0.5551) 20.42%, rgba(165, 202, 60, 0) 42.4%), linear-gradient(141.57deg, rgba(203, 203, 203, 0.0425) 19.08%, rgba(165, 202, 60, 0) 36.34%), linear-gradient(262.14deg, #FCEAC9 14.58%, #FFFFFF 67.63%);
+  bottom: 0px;
+  background: linear-gradient(
+  26.62deg, rgba(252, 234, 201, 0.8) 20.64%, rgba(165, 202, 60, 0) 27.88%), linear-gradient(
+  56.79deg, rgba(252, 234, 201, 0.66) 33.79%, rgba(165, 202, 60, 0) 45.05%), linear-gradient(
+  301.08deg, rgba(252, 234, 201, 0.5551) 20.42%, rgba(165, 202, 60, 0) 42.4%), linear-gradient(
+  141.57deg, rgba(203, 203, 203, 0.0425) 19.08%, rgba(165, 202, 60, 0) 36.34%), linear-gradient(
+  262.14deg, #FCEAC9 14.58%, #FFFFFF 67.63%);
   background-blend-mode: normal, darken, normal, normal, normal;
-  filter: blur(238px);
+  filter: blur(180px);
   border-radius: 24px;
   z-index: -1;
 }

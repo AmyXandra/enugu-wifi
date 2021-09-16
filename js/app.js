@@ -17,6 +17,7 @@
         } else {
             $(".sticky").removeClass("nav-sticky");
         }
+        
     }
 
 
