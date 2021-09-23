@@ -1440,7 +1440,14 @@ a.text-secondary:focus, a.text-secondary:hover{
   list-style: none;
   padding: 0;
 }
-
+.footer-contact-icon {
+  background: #009133;
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
+  text-align: center;
+  border-radius: 50%;
+}
 .footer-icons li{
   float: left;
   margin: 0 6px 0 0px;
